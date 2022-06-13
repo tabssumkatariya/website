@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* This css website scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.logo img {
+  width: 33%;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#search {
+  background: none;
+  border: white 2px solid;
+  border-radius: 20px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+}
+
+.nav-list {
+  width: 50%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.nav-list li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.rightnav {
+  width: 50%;
+  /* background-color: aqua; */
+  text-align: right;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid silver;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.background {
+  background: rgb(0, 0, 0, 0.7) url("../img/bj.img.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+#firstsection {
+  height: 100vh;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 50%;
+  height: 80%;
+  margin: auto;
+  font-family: "Cinzel", serif;
+}
+
+.f-half {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s-half {
+  width: 30%;
+  display: flex;
+}
+
+.s-half img {
+  width: 70%;
+  border: 4px solid white;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+
+.big-text {
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 17px;
+  margin: 8px 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+  padding: 7px 30px;
+  width: 25%;
+  margin: 7px 7px;
+  border: solid 3px white;
+  color: white;
+  border-radius: 9px;
+  background: none;
+  font-family: "Cinzel", serif;
+}
+
+.btn-sm {
+  padding: 6px 7px;
+  width: 67px;
+  vertical-align: middle;
+  font-family: "Cinzel", serif;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: solid 3px gray;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: 45px auto;
+}
+
+.Left {
+  flex-direction: row-reverse;
+}
+
+.para {
+  padding: 25px 65px;
+}
+
+.thumil img {
+  width: 240px;
+}
+
+#contact {
+  background-color: #78b23352;
+  height: 750px;
+}
+
+#contact h2 {
+  display: flex;
+  margin: 15px 30px;
+  padding: 25px 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.7rem;
+  font-family: "Cinzel", serif;
+}
+
+.form {
+  max-width: 65%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 15px 5px;
+  font-size: 19px;
+  border: 2px solid #425828;
+  border-radius: 15px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 13px 5px;
+  font-size: 19px;
+  border: 2px solid #425828;
+  border-radius: 15px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+.btn-brek {
+  width: 170px;
+  margin: 10px auto;
+  background-color: #425828;
+  display: block;
+  padding: 10px 10px;
+}
+
+.footer {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.burger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+  display: none;
+}
+
+.line {
+  width: 33px;
+  height: 4px;
+  background-color: aliceblue;
+  margin: 4px 3px;
+}
+
+
+
+@media only screen and (max-width: 1111px) {
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 474px;
+    transition: all 0.5s ease-out;
+  }
+
+  .rightnav {
+    width: 30%;
+    text-align: center;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .h-nav-resp {
+    height: 65px;
+  }
+
+  .v-class-resp {
+    opacity: 0;
+  }
+
+  .box-main {
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .para {
+    padding: 0px 10px;
+  }
+
+  .big-text {
+    text-align: center;
+  }
+
+  .small-text {
+    text-align: center;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .btn {
+    width: 95px;
+
+  }
+
+  .btn-sm {
+    width: 86px;
+    margin-top: 10px;
+  }
+
+  .sectionsubTag {
+    text-align: start;
+  }
+}
